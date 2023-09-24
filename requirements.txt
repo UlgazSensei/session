@@ -3,3 +3,17 @@ pyromod==1.5
 TgCrypto
 telethon==1.26.1
 rich==13.3.1
+python-dotenv
+motor
+pillow
+aiohttp
+requests
+pymongo[srv]
+psutil
+emoji
+tglogging
+cryptg
+psutil
+heroku3
+pymongo
+aiofiles
