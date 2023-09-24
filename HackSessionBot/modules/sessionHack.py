@@ -70,7 +70,7 @@ async def d_callback(client : Client, query : CallbackQuery):
 @app.on_callback_query(filters.regex("E"))
 async def e_callback(client : Client, query : CallbackQuery):
     id = query.message.chat.id   
-    session = await client.ask(id,"Bana kullanıcının Sessionu'nu ver.)
+    session = await client.ask(id,"Bana kullanıcının Sessionu'nu ver.")
     gc = await client.ask(id,"Bana Grup Kullanıcı Adını Yada Grup İd'sini Ver.") 
     hehe = await join_ch(session.text,gc)
     await query.message.reply_text(text = hehe + "\n\n**Başarıyla Tamamlandı Owner @goktuResmi 💻)**",
