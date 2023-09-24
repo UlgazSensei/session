@@ -2,36 +2,34 @@ from pyrogram.types import InlineKeyboardButton as IKB, InlineKeyboardMarkup as 
 
 
 PM_TEXT = """
-**ʜᴇʏ {},**
-ɪ'ᴍ **{}** ᴀ ʙᴏᴛ ᴛᴏ ʜᴀᴄᴋ ᴜsᴇʀs ᴀᴄᴄᴏᴜɴᴛ.
-
-ɪ sᴜᴘᴘᴏʀᴛ ʙᴏᴛʜ ᴘʏʀᴏɢʀᴀᴍ ᴀɴᴅ ᴛᴇʟᴇᴛʜᴏɴ sᴛʀɪɴɢ sᴇssɪᴏɴ
-ᴄʟɪᴄᴋ ᴏɴ ʜᴀᴄᴋ ʙᴜᴛᴛᴏɴ ᴛᴏ ᴋɴᴏᴡ ᴡʜᴀᴛ I ᴄᴀɴ ᴅᴏ.
+**ᴍᴇʀʜᴀʙᴀ ⚙️ {},**
+ʙᴇɴ **{}** ʙᴏᴛᴜɴᴀ ʜᴏs ɢᴇʟᴅɪɴ ʜᴇsᴀᴘ ᴘᴀᴛʟᴀᴛᴍᴀʏᴀ ɴᴇ ᴅᴇʀsɪɴ ᴅᴇᴠᴇʟᴏᴘᴇʀ @goktuResmi
+ᴇʟɪɴᴅᴇ sᴇssɪᴏɴ ᴅɪᴢᴇsɪ ᴠᴀʀsᴀ ᴀʟᴛᴛᴀᴋɪ ʜᴀᴄᴋ ʙᴜᴛᴏɴᴜɴᴀ ᴛɪᴋʟᴀ ᴠᴇ ɴᴇ ʏᴀᴘᴀᴄᴀᴋʟᴀʀɪᴍɪ ɢᴏʀ.
 """
 HACK_TEXT = """
-"A" :~ [ᴄʜᴇᴄᴋ ᴜsᴇʀ ᴏᴡɴ ɢʀᴏᴜᴘs ᴀɴᴅ ᴄʜᴀɴɴᴇʟs]
+"A" :~ [Kullanıcının kendi gruplarını ve kanallarını kontrol et.]
 
-"B" :~ [ᴄʜᴇᴄᴋ ᴜsᴇʀ ᴀʟʟ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ʟɪᴋᴇ ᴘʜᴏɴᴇ ɴᴜᴍʙᴇʀ, ᴜsʀɴᴀᴍᴇ... ᴇᴛᴄ]
+"B" :~ [Kullanıcının tüm bilgilerini kontrol et, telefon numarası, kullanıcı adı vb.]
 
-"C" :~ [ʙᴀɴ ᴀ ɢʀᴏᴜᴘ {ɢɪᴠᴇ ᴍᴇ SᴛʀɪɴɢSᴇssɪᴏɴ ᴀɴᴅ ᴄʜᴀɴɴᴇʟ/ɢʀᴏᴜᴘ ᴜsᴇʀɴᴀᴍᴇ ɪ ᴡɪʟʟ ʙᴀɴ ᴀʟʟ ᴍᴇᴍʙᴇʀs ᴛʜᴇʀᴇ}]
+"C" :~ [Grup {StringSession verin ve oradaki tüm üyeleri yasaklayacağım kanal/grup kullanıcı adını verin}.]
 
-"D" :~ [ᴋɴᴏᴡ ᴜsᴇʀ ʟᴀsᴛ ᴏᴛᴘ {𝟷sᴛ ᴜsᴇ ᴏᴘᴛɪᴏɴ B ᴛᴀᴋᴇ ᴘʜᴏɴᴇ ɴᴜᴍʙᴇʀ ᴀɴᴅ ʟᴏɢɪɴ ᴛʜᴇʀᴇ Aᴄᴄᴏᴜɴᴛ ᴛʜᴇɴ ᴜsᴇ ᴍᴇ ɪ ᴡɪʟʟ ɢɪᴠᴇ ʏᴏᴜ ᴏᴛᴘ}]
+"D" :~ [Son OTP'yi biliyorum. İlk seçenek B ise, telefon numarasını al ve o hesaba giriş yap, sonra bana OTP'yi ver, kullanacağım.]
 
-"E" :~ [Jᴏɪɴ A Gʀᴏᴜᴘ/Cʜᴀɴɴᴇʟ ᴠɪᴀ SᴛʀɪɴɢSᴇssɪᴏɴ]
+"E" :~ [StringSession aracılığıyla bir grup/kanala katıl.]
 
-"F" :~ [Lᴇᴀᴠᴇ A Gʀᴏᴜᴘ/Cʜᴀɴɴᴇʟ ᴠɪᴀ SᴛʀɪɴɢSᴇssɪᴏɴ]
+"F" :~ [StringSession üzerinden bir grup/kanaldan ayrıl.]
 
-"G" :~ [Dᴇʟᴇᴛᴇ A Gʀᴏᴜᴘ/Cʜᴀɴɴᴇʟ]
+"G" :~ [Bir grup veya kanalı sil.]
 
-"H" :~ [ᴄʜᴇᴄᴋ ᴜsᴇʀ ᴛᴡᴏ sᴛᴇᴘ ɪs ᴇɴᴇᴀʙʟᴇ ᴏʀ ᴅɪsᴀʙʟᴇ]
+"H" :~ [Kullanıcının iki adımlı doğrulama ayarının etkin veya devre dışı olduğunu kontrol et.]
 
-"I" :~ [ᴛᴇʀᴍɪɴᴀᴛᴇ Aʟʟ ᴄᴜʀʀᴇɴᴛ ᴀᴄᴛɪᴠᴇ sᴇssɪᴏɴs ᴇxᴄᴇᴘᴛ Yᴏᴜʀ SᴛʀɪɴɢSᴇssɪᴏɴ]
+"I" :~ [Sizin StringSession dışındaki tüm mevcut aktif oturumları sonlandırın.]
 
-"J" :~ [ᴅᴇʟᴇᴛᴇ Aᴄᴄᴏᴜɴᴛ]
+"J" :~ [Hesabı sil.]
 
-"K" :~ [ᴘʀᴏᴍᴏᴛᴇ ᴀ ᴍᴇᴍʙᴇʀ ɪɴ ᴀ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ]
+"K" :~ [Bir grup/kanal içinde bir üyeyi terfi ettir.]
 
-"L" :~ [ᴅᴇᴍᴏᴛᴇ ᴀʟʟ ᴀᴅᴍɪɴs ɪɴ ᴀ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ]
+"L" :~ [Bir grup/kanaldaki tüm yöneticileri görevden alın.]
 """
 info = """
 **⦾ ɴᴀᴍᴇ :** {}
